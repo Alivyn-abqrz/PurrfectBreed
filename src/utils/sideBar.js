@@ -1,16 +1,15 @@
-const sideBar = () => {
+const navBar = () => {
   document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
-    const closeMenu = document.querySelector('.close-btn');
-    const menuLinks = document.querySelector('.navbar-links');
-    menuToggle.addEventListener('click', () => {
-      menuLinks.style.display = 'flex'
-      menuToggle.style.display = 'none'
-    })
-    closeMenu.addEventListener('click', () =>{
-      menuLinks.style.display = 'none'
-      menuToggle.style.display = 'block'
-    })
+const sidebar = document.getElementById('sidebar');
+const closebtn = document.querySelector('#btn-close')
+
+menuToggle.addEventListener('click', () => {
+    sidebar.style.display = 'block';
+});
+closebtn.addEventListener('click',() =>{
+  sidebar.style.display ='none'
+} )
   })
 }
-export default sideBar;
+export default navBar;
