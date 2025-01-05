@@ -13,7 +13,7 @@
       <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
       <ul class="nav-links">
         <li><a href="#"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
-        <li><a href="#"><i class="fa-solid fa-image"></i>&nbsp;Gallery</a></li>
+        <li><a href="#gallery"><i class="fa-solid fa-image"></i>&nbsp;Gallery</a></li>
         <li><a href="#"><i class="fa-solid fa-paw"></i>&nbsp;Breed</a></li>
     </ul>
     </nav>
@@ -26,14 +26,39 @@
       </ul>
   </aside>
 
-   <div class="main-container">
+   <section class="main-container">
     <div class="search-section">
     <h1>Search <span>Cat</span></h1>
     <input type="text" id="SearchInput" placeholder="Search Cat Breed">
     <button id="searchButton"><i class="fa-solid fa-search"></i> Search</button>
   </div>
+   </section>
+
+   <section id="gallery" class="gallery-section">
+    <h1><span>Cat</span> Gallery</h1>
+    <div id="searched"></div>
+    <button id="refreshButton"><i class="fa-solid fa-rotate"></i> Refresh</button>
+    <div class="cat-container"></div>
+   </section>
+
+   <!-- Modal for displaying cat details -->
+   <div class="cat-modal" id="catModal">
+      <div class="cat-modal-content">
+        <span class="close-modal">&times;</span>
+        <img src="" alt="cat" id="catModalImage">
+        <div id="catModalInfo"></div>
+      </div>
    </div>
-   <div class="cat-container"></div>
+   <footer>
+    <p>&copy; 2025 Purrfect Breed. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p>Contact us at: <a href="mailto:support@purrfectbreed.com" style="color: #f472b6;">support@purrfectbreed.com</a></p>
+  </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

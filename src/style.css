@@ -7,6 +7,7 @@ body, html{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f1f5f9;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 h1{
   color: #f1f5f9;

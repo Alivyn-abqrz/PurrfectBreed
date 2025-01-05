@@ -48,19 +48,7 @@
   opacity: 1;
   transform: scale(4);
 }
-.cat-container{
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  justify-content: center;
-  gap: 15px;
-}
-.cat-container img{
-  width: 200px;
-  height: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+
 /* Responsive Styles */
 @media (min-width: 320px) {
   .search-section{

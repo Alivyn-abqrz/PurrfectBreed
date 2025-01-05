@@ -1,9 +1,12 @@
 import './style.css'
 import './styles/nav.css'
 import './styles/main.css'
-import catBreedApi from './utils/fetchApi'
+import './styles/gallery.css'
+import './styles/modal.css'
+import './styles/footer.css'
+import catBreedApi from './utils/Search'
 import TestApi from './utils/testApi';
-import navBar from './utils/sideBar';
+import navBar from './utils/navBar';
 
 
 
