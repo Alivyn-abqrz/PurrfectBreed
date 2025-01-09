@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body, html{
   min-height: 100vh;
@@ -8,6 +9,8 @@ body, html{
   background-color: #f1f5f9;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #f9f9f9, #e9ecef);
+  color: #333;
 }
 h1{
   color: #f1f5f9;

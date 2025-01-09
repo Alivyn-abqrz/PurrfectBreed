@@ -1,0 +1,45 @@
+.breeds-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  max-width: 800px; /* Limit the width for better readability */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  z-index: 10000;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center it */
+}
+
+
+.breeds {
+  background: #f4f4f4;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.breeds:hover {
+  background: #ffcc00;
+  color: #fff;
+  transform: translateY(-5px); /* Small hover effect */
+}
+
+/* Optional: For better mobile responsiveness */
+@media (max-width: 600px) {
+  .breeds-list {
+    width: 100%;
+    padding: 20px;
+  }
+}
