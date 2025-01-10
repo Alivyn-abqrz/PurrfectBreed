@@ -16,6 +16,7 @@ const navBar = () => {
     document.addEventListener('click', (e) => {
       if (!sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
         sidebar.classList.remove('active');
+
       }
     });
   })

@@ -45,7 +45,7 @@ const createCatCard = (cat) => {
   return `
     <div class="cat-card" data-info="${safeEncode(catData)}">
       <img src="${cat.url}" alt="${breedName}">
-      <p>${breedName}</p>
+      <p><span><i class="fa-solid fa-paw"></i></span>&nbsp;${breedName}</p>
     </div>`;
 };
 
@@ -54,11 +54,13 @@ const createCatCard = (cat) => {
     const breedInfo = catData.breeds?.[0] || {};
     catModalImage.src = catData.url;
     catModalInfo.innerHTML = `
+     <div class= 'backgroundmodal'>
       <h2>${breedInfo.name || 'Unknown Breed'}</h2>
-      <p><strong>Description:</strong> ${breedInfo.description || 'No description available.'}</p>
-      <p><strong>Origin:</strong> ${breedInfo.origin || 'Unknown'}</p>
-      <p><strong>Temperament:</strong> ${breedInfo.temperament || 'Unknown'}</p>
-      <p><strong>Life Span:</strong> ${breedInfo.life_span || 'Unknown'} years</p>
+      <p><span>Description:</span> ${breedInfo.description || 'No description available.'}</p>
+      <p><span>Origin:</span> ${breedInfo.origin || 'Unknown'}</p>
+      <p><span>Temperament:</span> ${breedInfo.temperament || 'Unknown'}</p>
+      <p><span>Life Span:</span> ${breedInfo.life_span || 'Unknown'} years</p>
+      </div>
     `;
     catModal.style.display = 'block';
   };
@@ -109,11 +111,13 @@ const createCatCard = (cat) => {
       );
         // Display breed information
     searchDiv.innerHTML = `
-    <h2>About the "${selectedBreed.name}" Breed</h2>
-    <p><strong>Origin:</strong> ${selectedBreed.origin}</p>
-    <p><strong>Temperament:</strong> ${selectedBreed.temperament}</p>
-    <p><strong>Lifespan:</strong> ${selectedBreed.life_span} years</p>
-    <p><strong>Description:</strong> ${selectedBreed.description}</p>
+    <div class='searched-gallery'> 
+    <h2>About the "<span>${selectedBreed.name}</span>" Breed</h2>
+    <p><span>Origin:</span> ${selectedBreed.origin}</p>
+    <p><span>Temperament:</span> ${selectedBreed.temperament}</p>
+    <p><span>Lifespan:</span> ${selectedBreed.life_span} years</p>
+    <p><span>Description:</span> ${selectedBreed.description}</p>
+    </div>
   `;
 
       catContainer.innerHTML = response.data
@@ -195,14 +199,17 @@ style.textContent = `
     position: absolute;
     top: 10px;
     right: 10px;
-    color: white;
+    color: black;
+    background-color:#fff;
+    border-radius:50%;
+    padding: 0 10px 0 10px;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
   }
 
   .close-modal:hover {
-    color:  #f472b6;
+    color:  #be185d;
   }
 
   .cat-image {

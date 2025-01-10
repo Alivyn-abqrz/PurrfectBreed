@@ -6,10 +6,9 @@
 body, html{
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f1f5f9;
+  background-color: #fbcfe8;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background: linear-gradient(to bottom, #f9f9f9, #e9ecef);
   color: #333;
 }
 h1{
@@ -17,6 +16,7 @@ h1{
 }
 span{
   color: #f472b6;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
