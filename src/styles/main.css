@@ -14,15 +14,15 @@
   padding: 10px;
   margin: 10px 0;
   font-size: 16px; /* Set font size */
-  border: 2px solid #f472b6; /* Border with your gradient base color */
+  border: 2px solid var(--primary); /* Border with your gradient base color */
   border-radius: 8px; /* Rounded corners */
   background-color: #fff; /* Background color */
-  color: #be185d; /* Text color */
+  color: var(--second); /* Text color */
   outline: none; /* Remove outline on focus */
   transition: all 0.3s ease; /* Smooth hover/focus transitions */
 }
 #SearchInput:focus {
-  border-color: #f472b6; /* Highlight border on focus */
+  border-color:var(--primary); /* Highlight border on focus */
   box-shadow: 0 0 5px rgba(244, 114, 182, 0.5); /* Glow effect */
 }
 #searchButton{
@@ -31,7 +31,7 @@
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    background-color: #f472b6;
+    background-color: var(--primary);
     border: none;
     border-radius: 25px;
     overflow: hidden;
@@ -40,7 +40,7 @@
 
 }
 #searchButton:hover{
-  background-color: #be185d;
+  background-color: var(--second);
 }
 #searchButton::after{
   content:'';

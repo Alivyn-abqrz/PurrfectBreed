@@ -21,22 +21,22 @@
 }
 .searched-gallery{
   margin-top: 0.5rem;
-  background-color: #fff;
+  background-color: var(--light);
   border-radius: 8px;
   padding: 5px;
 }
 .backgroundmodal{
-  background-color: #fff;
+  background-color: var(--light);
   border-radius: 8px;
   padding: 5px;
 }
 .backgroundmodal h2{
   text-align: center;
-  color: #be185d;
+  color: var(--second);
 }
 #refreshButton {
   margin: 20px 0;
-  background-color: #f472b6;
+  background-color: var(--primary);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -45,10 +45,10 @@
 }
 
 #refreshButton:hover {
-  background-color: #be185d;
+  background-color: var(--second);
 }
 .cat-image{
-  background-color: #f472b6;
+  background-color: var(--primary);
 }
 @media (min-width:320px) {
   .cat-container{

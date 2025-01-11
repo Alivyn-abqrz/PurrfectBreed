@@ -11,11 +11,16 @@ body, html{
   scroll-behavior: smooth;
   color: #333;
 }
+:root{
+  --primary:#f472b6;
+  --light:#f1f5f9;
+  --second:#be185d;
+}
 h1{
-  color: #f1f5f9;
+  color: var(--light);
 }
 span{
-  color: #f472b6;
+  color: var(--primary);
   font-weight: bold;
 }
 a {
