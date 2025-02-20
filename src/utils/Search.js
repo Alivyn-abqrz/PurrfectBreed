@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const catBreedApi = () => {
-  const apiKey = 'live_pnTFg3HR1QYiGpxeXvKrFN3CvIDPYiFx6gbqptFqXRgoPvlxhulfK0thw3797rIJ';
-
+  const apiKey = import.meta.env.VITE_API_KEY;
   // DOM elements
   const SearchInput = document.querySelector('#SearchInput');
   const btnSearch = document.querySelector('#searchButton');
