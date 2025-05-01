@@ -4,7 +4,7 @@
   align-items: center;
   padding: 2px;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/cover.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/bg-mobile.jpg');
   background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
